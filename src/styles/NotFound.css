@@ -1,0 +1,22 @@
+.page-wrp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-wrp h1 {
+    font-size: 200px;
+    color: #7A3092;
+}
+
+.page-wrp span {
+    font-size: 45px;
+    color: #A73669;
+}
+
+.go-back-home {
+    font-size: 25px;
+}

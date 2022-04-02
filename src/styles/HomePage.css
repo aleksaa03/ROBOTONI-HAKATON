@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.supported-platforms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.supported-platforms h1,
+.supported-platforms img {
+  margin: 30px 0;
+}
+.supported-platforms h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.supported-platforms img {
+  width: 90%;
+}
+.virtual-assistent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+}
+.virtual-assistent .header h1,
+.virtual-assistent .header p {
+  margin: 40px 0;
+}
+.virtual-assistent .header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  width: 70%;
+  color: #5c3d9f;
+}
+.virtual-assistent .header p {
+  font-size: 20px;
+  font-weight: 300;
+  width: 60%;
+  color: #000000;
+}
+.brand-names {
+  padding: 5% 10%;
+}
+.brand-names h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #7a3092;
+  margin: 0 0 50px 0;
+}
+.brand-names .names {
+  display: flex;
+}
+.brand-names .names img {
+  margin: 20px 0;
+}
+.brand-names .names h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #5c3c9f;
+}
+.brand-names .names p,
+.brand-names .names ul li {
+  font-size: 16px;
+  font-weight: 400;
+  width: 50%;
+}
+.brand-names .names ul {
+  list-style-type: none;
+}
+.brand-names .names ul li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+.brand-names .names ul li::before {
+  content: "• ";
+  color: #a73669;
+}
+@media only screen and (max-width: 1200px) {
+  .virtual-assistent .header p {
+    width: 100%;
+  }
+  .brand-names .names p,
+  .brand-names .names ul li {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .supported-platforms h1 {
+    text-align: center;
+  }
+  .supported-platforms img {
+    width: 90%;
+  }
+  .virtual-assistent {
+    flex-direction: column;
+  }
+  .virtual-assistent .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .virtual-assistent .header h1,
+  .virtual-assistent .header p {
+    width: 100%;
+  }
+  .virtual-assistent .image img {
+    width: 90%;
+  }
+  .brand-names h1 {
+    text-align: center;
+  }
+  .brand-names .names {
+    flex-direction: column;
+  }
+  .brand-names .names p,
+  .brand-names .names ul li {
+    width: 100%;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 0px;             
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;  
+  border-radius: 0px;     
+}

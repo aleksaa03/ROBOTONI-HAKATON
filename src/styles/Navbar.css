@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.navbar .logo h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #7a3092;
+  cursor: pointer;
+}
+.active-link {
+  color: #7a3092;
+  text-decoration: none;
+  font-weight: 900;
+}
+.navbar .nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .nav-options .coin {
+  display: flex;
+  width: 150px;
+  margin: 0 10px;
+  padding: 5px;
+  border: 2px solid #a736697d;
+  border-radius: 24px;
+  background: #e4e4e4;
+  color: #000000;
+  box-shadow: 4px 6px 13px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar .nav-options .coin img {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+}
+.navbar .nav-options .coin p {
+  font-size: 20px;
+  margin: 0 0 0 15px;
+  text-align: center;
+  font-family: "Rampart One", cursive;
+}
+.navbar .nav-options ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar .link {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.navbar .link {
+  color: #494949;
+  font-size: 17px;
+  text-decoration: none;
+}
+.navbar .nav-options-responsive {
+  display: none;
+}
+.nav-options-responsive ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-options-responsive ul a {
+  margin-top: 35px !important;
+  font-size: 32px !important;
+  color: white !important;
+  text-decoration: none;
+}
+.nav-options-responsive ul a:nth-child(1) {
+  margin-top: 100px !important;
+}
+@media only screen and (max-width: 500px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .navbar input[type="text"] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    border: 2px solid #7a3092;
+    border-radius: 24px;
+    width: 90%;
+    outline: none;
+    margin: 5px 0;
+    padding: 10px;
+    animation: search 0.1s forwards;
+  }
+  .navbar .logo h1 {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .navbar .nav-options-responsive {
+    display: initial;
+  }
+  .navbar .nav-options-responsive i {
+    font-size: 25px;
+    margin: 0 5px;
+  }
+  .navbar .nav-options {
+    display: none;
+  }
+  .navbar .nav-options-responsive > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #7a3092;
+    color: #ffffff;
+    animation: menu 0.1s forwards;
+  }
+  .navbar .nav-options-responsive > div i {
+    color: #ffffff !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+  .navbar .nav-options-responsive > div ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+  .navbar .nav-options-responsive > div ul li {
+    font-size: 30px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .navbar .nav-options-responsive > div ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  @keyframes search {
+    0% {
+      top: 20px;
+    }
+    100% {
+      top: 50px;
+    }
+  }
+  @keyframes menu {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}

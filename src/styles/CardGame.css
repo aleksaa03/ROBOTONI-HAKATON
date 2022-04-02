@@ -1,0 +1,132 @@
+.card-screen-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.header-card {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: white;
+}
+
+.brand-name {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0px;
+    padding: 0px;
+    color: #7A3092;
+}
+
+.back-img-arrow {
+    width: 66px;
+    height: 44px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.bg-cover-card {
+    background-image: url("../media/card-bg.png");
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100% - 250px);
+    position: absolute;
+    bottom: 0px;
+}
+
+.card-game-desc {
+    width: inherit;
+    height: fit-content;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+    color: #000000;
+    margin-block: 40px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 580px;
+}
+
+.game-data {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 220px
+}
+.card-name {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 42px;
+    color: #7A3092;
+}
+
+.start-btn {
+    width: 230px;
+    height: 70px;
+    background: #7A3092;
+    border-radius: 35px;
+    font-size: 30px;
+    color: white;
+    outline: none;
+    border: 3px solid #7A3092;
+    transition: 285ms ease-in-out;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: #fff;
+    color: #7A3092;
+    transition: 285ms ease-in-out;
+}
+
+.card-imgs {
+    margin-left: 150px;
+}
+
+@media only screen and (max-width:1600px) {
+    .card-imgs {
+        margin-left: 50px;
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width:1350px) {
+    .game-info {
+        width: 490px;
+    }
+    .game-data {
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 70px;
+    }
+    .header-card {
+        justify-content: space-around;
+        padding-inline: 5px;
+    }
+    .card-imgs {
+        margin-left: 35px;
+        transform: scale(0.72);
+    }
+}

@@ -1,0 +1,94 @@
+.end-game {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../media/stars.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.popup-result {
+    width: 800px;
+    padding-block: 30px;
+    background: #FFFFFF;
+    border: 3px solid #7A3092;
+    box-sizing: border-box;
+    box-shadow: 8px 19px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    animation: 400ms fadeForm ease;
+}
+
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-aligner {
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+}
+
+.game-title-final {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #7A3092;
+}
+
+.text-aligner-left {
+    width: 100%;
+    text-align: left;
+    padding-block: 10px;
+    padding-inline: 30px;
+}
+
+.score-title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+}
+
+.props {
+    width: 100%;
+    padding-left: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.props-items {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #4D4D4D;
+    margin-top: 25px;
+}
+
+.end-footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    margin-top: 30px;
+}

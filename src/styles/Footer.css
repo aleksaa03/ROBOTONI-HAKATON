@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #7a3092;
+  color: #ffffff;
+  padding: 5%;
+}
+.footer .nav-links h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.footer .nav-links h3,
+.footer .social-media h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 30px 0;
+  cursor: pointer;
+}
+.footer .newsletter h1,
+.footer .newsletter p,
+.footer .newsletter .input {
+  margin: 20px 0;
+}
+.footer .newsletter h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer .newsletter p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer .newsletter .input {
+  display: flex;
+}
+.footer .newsletter .input input[type="email"] {
+  height: 30px;
+  width: 300px;
+  padding: 5px;
+  border: 3px solid #a73669;
+  outline: none;
+}
+.footer .newsletter .input button {
+  width: 100px;
+  background: #ffffff;
+  color: #a73669;
+  border-top: 3px solid #a73669;
+  border-right: 3px solid #a73669;
+  border-bottom: 3px solid #a73669;
+  border-left: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .nav-links,
+  .footer .social-media,
+  .footer .newsletter {
+    text-align: center;
+  }
+  .footer .newsletter .input input[type="email"] {
+    height: 30px;
+    width: 90%;
+  }
+}

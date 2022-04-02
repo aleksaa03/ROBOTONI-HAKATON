@@ -1,0 +1,649 @@
+.account-wrp {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../media/account-background.png");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.account-wrapper {
+    width: 1252px;
+}
+
+.account-header {
+    padding-block: 10px;
+    margin-block: 20px;
+}
+
+.back {
+    width: 66px;
+    height: 44px;
+    margin-right: 200px;
+    cursor: pointer;
+}
+
+.sign-out {
+    color: #A73669;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 285ms ease-out;
+}
+
+.sign-out:hover{
+    color: #da689b;
+    transition: 285ms ease-in;
+}
+
+.account {
+    height: 762px;
+    background: #FFFFFF;
+    border: 4px solid #A73669;
+    box-sizing: border-box;
+    box-shadow: 6px 7px 19px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    animation: 380ms LoadForm ease;
+}
+
+.profile-itm {
+    width: 300px;
+    height: 669px;
+    background: #DADADA;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    padding-top: 85px;
+}
+
+.dashboard {
+    height: 754px;
+    width: calc(100% - 300px);
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding-top: 75px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #7A3092;
+    border-radius: 50%;
+}
+
+.img-wrp {
+    width: 150px;
+    height: 150px;
+}
+
+.verify-acc {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;  
+    color: #A73669;
+    margin-top: 28px;
+    cursor: pointer;
+    transition: 285ms ease-in;
+}
+
+.verify-acc:hover {
+    color: #753a54;
+    transition: 285ms ease-in;
+}
+
+.change-avatar {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    background-color: #A73669;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    position: relative;
+    bottom: 45px;
+    right: -110px;
+    display: none;
+}
+
+.username {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.leaderboard {
+    width: 361px;
+}
+
+.time-spent {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #555454;
+}
+
+.game { 
+    background: #FFFFFF;
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-top: 20px;
+    padding-block: 5px;
+    cursor: pointer;
+    transition: 285ms ease-in;
+}
+
+.game-name {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #676767;
+    padding: 0px;
+    margin: 0px;
+    width: 140px;
+}
+
+.brain-img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.badges {
+    margin-top: 50px;
+    padding:10px;
+}
+
+.badges-name {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.badge-itm {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin-block: 22px;
+}
+
+.row-my {
+    height: 100px;
+}
+
+.bio {
+    width: 368px;
+}
+
+.bio-txt {
+    background: #FFFFFF;
+    border: 2px solid #9E9E9E;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp:20; /* number of lines to show */
+           line-clamp: 20; 
+   -webkit-box-orient: vertical;
+   overflow: auto;
+   max-width: 100%;
+   transition: 285ms ease-in;
+}
+
+.bio-txt:hover, .game:hover {
+    box-shadow: 8px 10px 16px rgba(0, 0, 0, 0.25);
+    transition: 285ms ease-in;
+    transform: scale(0.95);
+}
+
+.city-location {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.row-two {
+    margin-top: 20px;
+}
+
+@keyframes LoadForm {
+    0% {
+        transform: translateY(-85%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes BlurEffect {
+    0% {
+        backdrop-filter: blur(0px);
+        opacity: 0;
+    }
+    100% {
+        backdrop-filter: blur(10px);
+        opacity: 1;
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    z-index: 99;
+    position: absolute;
+    transition: 300ms ease-in;
+    animation: 300ms BlurEffect ease-in;
+    top: 0px;
+}
+
+.modal-itm {
+    width: 700px;
+
+    background-color: #ffff;
+    border-radius: 25px;
+    z-index: 99999;
+    padding: 20px;
+   
+}
+
+.text-area{
+    width: calc(100% - 26px);
+    border: none;
+    outline: none;
+    background-color: #E9E9E9;
+    height: 330px;
+    resize: none;
+    border-radius: 25px;
+    margin-block: 20px;
+    padding: 13px;
+}
+
+.save {
+   background: #5C3D9F;
+   border: 2px solid #5C3D9F;
+   outline: none;
+   color: white;
+   font-size: 20px;
+   width: 130px;
+   padding-block: 8px;
+   margin-right: 15px;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: 285ms ease-in;
+}
+
+.save:hover {
+    background: #fff;
+    transition: 285ms ease-in;
+    color: #5C3D9F;
+}
+
+.cancel {
+    background: #fff;
+    border: 2px solid #A73669;
+    outline: none;
+    color: #A73669;
+    font-size: 20px;
+    width: 130px;
+    padding-block: 8px;
+    margin-right: 15px;
+    border-radius: 25px;
+    transition: 285ms ease-in;
+    cursor: pointer;
+ }
+
+ .cancel:hover {
+    background: #A73669;
+    border: 2px solid #A73669;
+    outline: none;
+    color: #fff;
+   transition: 285ms ease-in;
+ }
+
+@media only screen and (max-width: 1300px) {
+    .account-wrapper {
+        width: 1000px;
+    }
+    .dashboard {
+        height: 754px;
+        width: calc(100% - 250px);
+    }
+    .profile-itm {
+        width: 250px;
+    }
+    .leaderboard {
+        width: 300px;
+    }
+    .bio-txt {
+        padding: 10px;
+    }
+    .city-location{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .time-spent {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .badges-name {
+        font-size: 15px;
+        font-size: 20px;
+    }
+    .back {
+        transform: scale(0.8);
+    }
+}
+
+
+@media only screen and (max-width: 1050px)  and (min-width:950px){
+    .account-wrapper {
+        width: 900px;
+    }
+    .dashboard {
+        height: 754px;
+        width: calc(100% - 200px);
+    }
+    .profile-itm {
+        width: 200px;
+    }
+    .leaderboard {
+        width: 250px;
+    }
+    .bio-txt {
+        padding: 6px;
+    }
+    .city-location{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .time-spent {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .badges-name {
+        font-size: 13px;
+        font-size: 17px;
+    }
+    .back {
+        transform: scale(1.0);
+    }
+    .badge-itm {
+        width: 75px;
+        height: 75px;
+        margin-block: 5px;
+    }
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .change-avatar {
+        right: -90px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 950px)  and (min-width:500px){
+    .account-wrapper {
+        width: 100%;
+        height: fit-content;
+        animation: none;
+    }
+    .account {
+        border: none;
+        height: fit-content;
+        background-color: #fff;
+    }
+    .game {
+        padding-block: 15px;
+        width: 95%;
+    }
+    .dashboard {
+        height: fit-content;
+        width: 100%;
+    }
+    .game-name {
+        font-size: 20px;
+    }
+    .profile-itm {
+        width: 100%;
+        border-radius: 0px;
+        height: fit-content;
+        padding-block: 35px;
+    }
+    .leaderboard {
+        width: 90%;
+    }
+    .bio-txt {
+        padding: 15px;
+    }
+    .city-location{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .time-spent {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .badges-name {
+        font-size: 25px;
+        font-size: 30px;
+    }
+    .back {
+        transform: scale(0.8);
+    }
+    .badge-itm {
+        width: 130px;
+        height: 130px;
+    }
+    .row-my {
+        height: 200px;
+    }
+    .avatar, .img-wrp {
+        width: 250px;
+        height: 250px;
+    }
+    .avatar{
+        border-width: 4px;
+    }
+    .change-avatar {
+        right: -175px;
+        width: 50px;
+        height: 50px;
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .account, .dashboard {
+        flex-direction: column;
+        background-color: white;
+    }
+    .account {
+        margin-top: 60px;
+    }
+    .leaderboard, .bio {
+        padding-inline: 30px; 
+    }
+    .bio {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+    .username {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .overlay {
+        position: fixed;
+    }
+    .account-header {
+        background-color: rgba(255, 255, 255, 1);
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+    }
+    .account-wrp{
+        background-image: none;
+    }
+    .sign-out {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .profile-itm {
+        padding-block: 60px;
+    }
+    .badges {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 680px)  and (min-width:500px) {
+    .badge-itm {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px)  and (min-width:300px) {
+    .account-wrapper {
+        width: 100%;
+        height: fit-content;
+    }
+    .account {
+        border: none;
+        height: fit-content;
+        background-color: #fff;
+        animation: none;
+    }
+    .game {
+        padding-block: 15px;
+    }
+    .dashboard {
+        height: fit-content;
+        width: 100%;
+    }
+    .game-name {
+        font-size: 17px;
+    }
+    .profile-itm {
+        width: 100%;
+        border-radius: 0px;
+        height: fit-content;
+        padding-block: 35px;
+    }
+    .bio-txt {
+        padding: 15px;
+        width: 90%;
+    }
+    .city-location{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .time-spent {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .badges-name {
+        font-size: 20px;
+        font-size: 25px;
+    }
+    .back {
+        transform: scale(0.6);
+    }
+    .row-my {
+        height: 80px;
+    }
+    .avatar, .img-wrp {
+        width: 200px;
+        height: 200px;
+    }
+    .avatar{
+        border-width: 4px;
+    }
+    .change-avatar {
+        right: -145px;
+        width: 40px;
+        height: 40px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .account, .dashboard {
+        flex-direction: column;
+        background-color: white;
+    }
+    .account {
+        margin-top: 60px;
+    }
+    .leaderboard, .bio {
+        padding-inline: 25px; 
+        width: calc(100% - 60px);
+    }
+    .bio {
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+    .username {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .overlay {
+        position: fixed;
+    }
+    .account-header {
+        background-color: rgba(255, 255, 255, 1);
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+    }
+    .account-wrp{
+        background-image: none;
+    }
+    .sign-out {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .profile-itm {
+        padding-block: 60px;
+    }
+    .badge-itm {
+        width: 80px;
+        height: 80px;
+    }
+    .bio {
+        width: 100% !important;
+    }
+}

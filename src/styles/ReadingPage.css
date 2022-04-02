@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.reading {
+  background-image: url("../media/background.svg");
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.reading .app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.reading .app h1,
+.reading .app p {
+  margin: 30px 0;
+}
+.reading .app h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #7a3092;
+}
+.reading .app p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.reading .app textarea {
+  height: 300px;
+  width: 400px;
+  border: 2px solid #a73669;
+  border-radius: 24px;
+  padding: 20px;
+  resize: none;
+  outline: none;
+}
+.reading .app button {
+  height: 80px;
+  width: 200px;
+  background: #a73669;
+  border:2px solid #a73669 !important;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 30px 0;
+  cursor: pointer;
+  transition: 285ms ease-in;
+}
+
+.reading .app button:hover {
+  background: #ffff;
+  color: #a73669;
+  transition: 285ms ease-in;
+}
+
+.reading .image {
+  margin: 100px 0 0 0;
+}
+@media only screen and (max-width: 1200px) {
+  .reading {
+    align-items: center;
+  }
+  .reading .app {
+    margin: 0 30px;
+  }
+  .reading .image {
+    display: none;
+  }
+}

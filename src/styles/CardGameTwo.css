@@ -1,0 +1,121 @@
+.scene-two {
+     width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.cardgamescenetwo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.game-points-bar {
+    width: calc(100% - 150px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+ 
+}
+
+.points {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 560px;
+    position: absolute;
+    top: 180px;
+    flex-direction: column;
+    flex-direction: column;
+    padding-top: 65px;
+}
+
+.card {
+    width: 179px;
+    height: 225px;
+    display: inline-block;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 300ms ease-in-out;
+    margin: 20px;
+}
+
+.card-row {
+    margin-inline: 120px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    height: 600px;
+    margin-top: 30px;
+}
+
+.remove-card {
+    animation: 600ms hideCard ease-in;
+}
+
+@keyframes hideCard {
+    0% {
+        opacity: 1;
+  
+    }
+    100% {
+        opacity: 0;
+
+    }
+}
+
+.flip-card {
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: 285ms ease-in-out;
+}
+
+.timer-card {
+    width: 220px;
+    height: 58px;
+    background: #A73669;
+    border-radius: 30px;
+    font-size: 30px;
+    line-height: 58px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wrp-timer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.devider {
+    width: 5px;
+    height: 5px;
+}

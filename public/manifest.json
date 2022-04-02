@@ -1,0 +1,40 @@
+{
+  "name": "Robotoni Hakaton",
+  "short_name": "Robotoni Hakaton",
+  "theme_color": "#ffff",
+  "background_color": "#ffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": ".",
+  "icons":[
+    {
+        "src":"./logo192.png",
+        "sizes":"192x192",
+        "type":"image/png",
+        "purpose": "any maskable"
+    },
+    {
+        "src":"./logo512.png",
+        "sizes":"512x512",
+        "type":"image/png",
+        "purpose": "any maskable"
+    },
+    {
+        "src":"./logo300.png",
+        "sizes":"300x300",
+        "type":"image/png",
+        "purpose": "any maskable"
+    }
+],
+"shortcuts": [
+    {
+      "name": "Games",
+      "description": "Play games and boost skills",
+      "url": "/games",
+      "icons": [
+          { "src": "./logo128.png", "sizes": "128x128"}
+        ]
+    }
+  ]
+}

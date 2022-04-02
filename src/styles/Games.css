@@ -1,0 +1,131 @@
+.games-wrp {
+    width: 100%;
+}
+
+.banner-games {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #A73669;
+}
+
+.games-headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.games-headline h1 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 127px;
+    color: #FFFFFF;
+}
+
+.banner-img {
+    width: 400px;
+    height: 300px;
+}
+
+.game-wrapper {
+    padding-block: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+.games-and-apps-headline {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #5C3D9F;
+}
+
+.games-wrapper {
+    width: 100%;
+    padding-block: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.game-name-games {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.game-div {
+    cursor: pointer;
+    transition: 285ms ease-in;
+}
+
+.game-div:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: 285ms ease-in;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .games-headline h1 {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    
+    .banner-img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .games-headline h1 {
+        font-size: 26px;
+        line-height: 28px;
+        margin-left: 30px;
+    }
+
+    .banner-games {
+        height: 300px;
+    }
+    
+    .banner-img {
+        width: 200px;
+        height: 100px;
+    }
+    .games-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .games-and-apps-headline {
+        text-align: center;
+    }
+    .game-div {
+        cursor: pointer;
+        transition: 285ms ease-in;
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.memory-game-1 {
+  background-image: url("../media/memory-game-cover.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.memory-game-1 .memory-main {
+  display: flex;
+  padding: 10% 10% 0 10%;
+}
+.memory-game-1 .memory-main h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #7a3092;
+}
+.memory-game-1 .memory-main p {
+  font-size: 20px;
+  font-weight: 400;
+  width: 80%;
+}
+.memory-game-1 .settings {
+  padding: 0 10%;
+}
+.memory-game-1 .settings h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.memory-game-1 .settings .custom-button {
+  display: flex;
+}
+.memory-game-1 .settings .custom-button h1 {
+  font-size: 32px;
+  font-weight: 700;
+  height: 60px;
+  width: 80px;
+  background: #a73669;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memory-game-1 .settings .custom-button button {
+  height: 60px;
+  width: 60px;
+  background: none;
+  border: 2px solid #a73669;
+  font-size: 32px;
+  font-weight: 700;
+  color: #a73669;
+  cursor: pointer;
+  transition: 285ms ease-in;
+}
+
+
+.memory-game-1 .settings .custom-button button:hover {
+  background: #a73669;
+  color: #ffff;
+  transition: 285ms ease-in;
+}
+
+.memory-game-1 .settings #start {
+  height: 70px;
+  width: 230px;
+  border: none;
+  border-radius: 24px;
+  background: #7a3092;
+  border:2px solid #7a3092 !important;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 5% 0;
+  transition: 285ms ease-in;
+  cursor: pointer;
+}
+
+.memory-game-1 .settings #start:hover {
+  background: #ffff;
+  color: #7a3092;
+  transition: 285ms ease-in;
+}
+
+.memory-game-2 {
+  background-image: url("../media/memory-game-two-cover.png");
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.memory-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 10%;
+}
+.memory-main h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #7a3092;
+}
+.memory-main .timer {
+  height: 50px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a73669;
+  border-radius: 24px;
+}
+.memory-main .timer h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.memory-game-2 .words {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: auto;
+}
+.memory-game-2 .words h1 {
+  margin: 20px;
+}
+.memory-game-3 .memory-main {
+  padding: 10% 10% 0 10%;
+}
+.memory-game-3 .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+}
+.memory-game-3 .inputs input[type="text"] {
+  border: 2px solid #9f9f9f;
+  padding: 10px;
+  margin: 20px;
+  outline: none;
+}
+.memory-game-3 .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memory-game-3 .submit button {
+  height: 70px;
+  width: 270px;
+  background: #a73669;
+  border:2px solid #a73669 !important;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 285ms ease-in;
+}
+
+.memory-game-3 .submit button:hover {
+  background: #fff;
+  color: #a73669;
+  transition: 285ms ease-in;
+}
+
+@media only screen and (max-width: 1000px) {
+  .memory-game-1 .memory-main {
+    flex-direction: column;
+    padding: 20% 10% 0 10%;
+  }
+  .memory-game-1 .memory-main .image {
+    display: none;
+  }
+  .memory-game-2 .words,
+  .memory-game-3 .inputs {
+    flex-direction: column;
+    overflow-x: auto;
+    height: 200px;
+    width: 100%;
+  }
+}

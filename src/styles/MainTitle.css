@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.main {
+  padding: 5% 15%;
+  display: flex;
+}
+.main .header h1,
+.main .header p,
+.main .header button {
+  margin: 20px 0;
+}
+.main .header h1 {
+  color: #5c3d9f;
+  font-size: 48px;
+  font-weight: 700;
+}
+.main .header p {
+  font-weight: 300;
+  font-size: 20px;
+  width: 60%;
+  color: #3d3d3d;
+}
+.main .header button {
+  height: 70px;
+  width: 200px;
+  background: #5c3d9f;
+  border: 2px solid #5c3d9f !important;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 285ms ease-in;
+}
+.main .header button:hover {
+  background: #ffff;
+  color: #5c3d9f;
+  transition: 285ms ease-in;
+}
+@media only screen and (max-width: 1200px) {
+  .main .header p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .header h1 {
+    color: #5c3d9f;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .main .header p {
+    width: 100%;
+  }
+  .main .header button {
+    height: 60px;
+    width: 150px;
+    font-size: 25px;
+  }
+  .main .image img {
+    height: 300px;
+    width: 90%;
+  }
+}
